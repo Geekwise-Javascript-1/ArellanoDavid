@@ -2,23 +2,37 @@
 <html lang="en">
 <head>
    <meta charset="UTF-8">
-   <title>Document</title>
+   <title>Day 7</title>
+   <style>
+      label{display: flex;}
+      span {
+         flex: 1;
+      }
+      input{
+         flex: 2;
+      }
+   </style>
 </head>
 <body>
-   <h1>test</h1>
-
-   <script>
-      var car = {
-         name: "Subaru",
-         color: "green",
-         price: 20000
-      };
-      var user ={
-         username: "David"
-         password: "mypassword"
-      };
-      console.log(car.color);
-
-   </script>
+   <form id="form">
+      <label for="firstName">First Name
+         <input type="text" id="firstName" value="David">
+      </label>
+      <label for="lastName">Last Name
+         <input type="text" id="lastName" value="Arellano">
+      </label>
+      <label for="firstName">Email
+         <input type="email" id="email" value="dtarellano1@gmail.com">
+      </label>
+      <label for="firstName">Phone
+         <input type="tel" id="tel" value="5599751234">
+      </label>
+      <label for="city">City
+         <input type="text" id="city" value="Fresno">
+      </label>
+   </form>
+<button id="goBtn">GO</button>
+<div id="dupOut">The Duplicates</div>
+   <script src="review.js"></script>
 </body>
 </html>
